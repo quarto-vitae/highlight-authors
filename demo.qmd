@@ -1,0 +1,35 @@
+---
+format: markdown_github
+bibliography:
+  bib1: bib1.bib
+  bib2: bib2.bib
+csl: american-geophysical-union.csl
+filters:
+  - multibib
+  - bold-author.lua
+citeproc: false
+validate-yaml: false
+bold-auth-name:
+  - family: Cook
+    given: D.
+  - family: Goodwin
+    given: S.
+---
+
+# Bib1
+
+::: {.hidden}
+@Majumder_2025
+:::
+
+::: {#refs-bib1}
+:::
+
+# Bib2
+
+::: {.hidden}
+@Goodwin_2024
+:::
+
+::: {#refs-bib2}
+:::
