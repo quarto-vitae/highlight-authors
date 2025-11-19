@@ -3,7 +3,7 @@
 This repo contains a basic demo to test highlighting author names in 
 bibliographies. The source file is `demo.qmd` and the output is `demo.md` - 
 using GitHub markdown here so it can be viewed in the repo, but HTML also 
-works.
+works. In the HTML, the in-text citations are hidden.
 
 Current capabilities
  - Can create multiple bibliographies in sections
