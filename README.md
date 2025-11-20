@@ -1,9 +1,17 @@
 # Highlighting Author Names in Bibliographies
 
-This repo contains a basic demo to test highlighting author names in 
-bibliographies. The source file is `demo.qmd` and the output is `demo.md` - 
-using GitHub markdown here so it can be viewed in the repo, but HTML also 
-works. In the HTML, the in-text citations are hidden.
+This repo contains demos to test highlighting author names in 
+bibliographies. There are two demos:
+
+1. `demo_selected_refs.qmd` cites selected refs to include in 
+the bibliography for each section (the citations themselves are not shown since 
+they are added in divs with id `refs-<bib_label>`).
+2. `demo_all_refs.qmd` all refs from the bibliography corresponding to a 
+section are included, without having to cite individual refs (thanks to @dicook 
+for the tip).
+
+The output is set to GitHub markdown, so it can be viewed in the browser, 
+however the demos also work for HTML, docx and PDF (other formats not tested).
 
 Current capabilities
  - Can create multiple bibliographies in sections
@@ -36,25 +44,30 @@ validate-yaml: false
 
 # Bib1
 
-::: {.hidden}
-@Majumder_2025
-:::
-
 ::: {#refs-biblio1}
+@Majumder_2025
 :::
 
 # Bib2
 
-::: {.hidden}
-@Goodwin_2024
-:::
-
 ::: {#refs-biblio2}
+@Goodwin_2024
 :::
 ```
 
 Note the suffix of the `refs` labels matches the options of the `bibliography` 
 field, not the names of the bibliographies!
+
+To cite all references in each bib add
+
+```yaml
+nocite: |
+  @*
+```
+
+to the YAML. Note this applies to all bibliographies, so you have to either 
+select specific references each time or select all references in each 
+bibliography.
 
 ## Bold author names
 
