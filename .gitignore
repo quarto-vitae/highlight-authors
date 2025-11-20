@@ -1,3 +1,5 @@
-demo_files*
-demo.html
-demo.json
+*_files*
+*.docx
+*.html
+*.json
+*.pdf

@@ -3,6 +3,8 @@ format: markdown_github
 bibliography:
   bib1: bib1.bib
   bib2: bib2.bib
+nocite: |
+  @*
 csl: american-geophysical-union.csl
 filters:
   - multibib
@@ -18,18 +20,10 @@ bold-auth-name:
 
 # Bib1
 
-::: {.hidden}
-@Majumder_2025
-:::
-
 ::: {#refs-bib1}
 :::
 
 # Bib2
-
-::: {.hidden}
-@Goodwin_2024
-:::
 
 ::: {#refs-bib2}
 :::
